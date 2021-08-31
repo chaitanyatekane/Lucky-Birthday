@@ -22,9 +22,9 @@ function clearInput() {
 const findIfLucky = (dob, luckyNumber) => {
   const sum = dob.split("").reduce((acc, curr) => acc + parseInt(curr, 10), 0);
   const divideResult = sum % parseInt(luckyNumber, 10);
-  if (divideResult) return `${luckyNumber} is not that lucky! 😕`;
+  if (divideResult) return "Your Birthday Is Not Lucky 😕";
 
-  return `${luckyNumber} is a lucky number!! 🥳 `;
+  return "Your Birthday Is Lucky 🥳 ";
 };
 
 function printResult(result) {
