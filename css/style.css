@@ -21,6 +21,7 @@ body {
   line-height: 1.5;
   background-color: rgb(37, 3, 70);
   color: white;
+  text-align: center;
 }
 
 h1 {
@@ -40,6 +41,10 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+#dob {
+  text-align: center;
 }
 
 .form-group {
