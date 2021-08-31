@@ -7,6 +7,13 @@ form.addEventListener("submit", handleFormSubmit);
 
 function handleFormSubmit(event) {
   event.preventDefault();
+  if(luckyNumber.value == 0) {
+      const message = "Enter Number Greater Than 0";
+      printResult(message);
+      clearInput();
+      return;
+    
+  }
   const result = findIfLucky(dob.value.replaceAll("-", ""), luckyNumber.value);
   printResult(result);
   clearInput();
